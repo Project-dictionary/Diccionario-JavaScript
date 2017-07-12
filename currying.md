@@ -10,25 +10,25 @@ _Esencialmente crea una cadena de funciones parcialmente aplicadas que eventualm
 
 Ejemplo:
 
-```
+```js
 "use strict";
 
 multiply = function multiply(n, m) { 
- 
+
  return n * m;
- 
+
 };
 
  multiply(3, 4) === 12; // true
- 
+
 //Currying 
 
 curryedMultiply = function curryedMultiply(n) {
 
   return function(m) {
-  
+
     return multiply(n, m);
-    
+
   };
 };
 
@@ -47,15 +47,15 @@ Si bien es difícil encontrar un caso de uso en la vida real, es una forma de si
 
 Por supuesto
 
-```
+```js
 "use strict";
 
 curryedMultiply = function curryedMultiply(n) {
 
  return function(m) { 
- 
+
   return n * m;
-  
+
   };
 };
 
@@ -64,7 +64,7 @@ curryedMultiply(3)(4) === 12;  // true
 multiply = function multiply(n, m) { 
 
  return curryedMultiply(n)(m);
- 
+
 };
 
 multiply(3, 4) === 12; // true
