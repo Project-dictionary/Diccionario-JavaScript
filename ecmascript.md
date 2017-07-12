@@ -14,101 +14,107 @@ El problema de las variables declaradas con \_var \_está en que tienen ámbito 
 
 La interpolación de variables en cadena facilita la construcción de strings y hace el código más legible. Los strings se hacen con las comillas invertidas o francesas \( \` \)
 
-    const now = newDate(Date.now());
+```js
+const now = newDate(Date.now());
 
-    const message = `¡Hola ${now.getFullYear()}!`;
+const message = `¡Hola ${now.getFullYear()}!`;
 
-    console.log(message);  // ¡Hola 2016!
+console.log(message);  // ¡Hola 2016!
+```
 
 ### Desestructuración {#desestructuración}
 
 Se ha incorporado la asignación desestructurada pudiendo hacer cosas como las siguientes en las asignaciones y en las llamadas a las funciones:
 
-    // Arrays
+```js
+// Arrays
 
-    const array = [1, 2];
+const array = [1, 2];
 
-    const [a, b] = array;
+const [a, b] = array;
 
-    console.log(`${a}, ${b}`); // 1, 2
+console.log(`${a}, ${b}`); // 1, 2
 
-    // Objects
+// Objects
 
-    constobject = { name: 'Jhon', age: 30};
+constobject = { name: 'Jhon', age: 30};
 
-    const {name, age} = object;
+const {name, age} = object;
 
-      console.log(`${name}, ${age}`);  // Jhon, 30 
+  console.log(`${name}, ${age}`);  // Jhon, 30 
 
-    // Functions
+// Functions
 
-    function whois({displayName: displayName, fullName: { firstName: name }}){
+function whois({displayName: displayName, fullName: { firstName: name }}){
 
-      console.log(`${displayName} is ${name}`);
+  console.log(`${displayName} is ${name}`);
 
+}
+
+
+var user = {
+
+  id: 42,
+
+  displayName: "jdoe",
+
+  fullName: {
+
+      firstName: "Jhon",
+
+      lastName: "Doe"
     }
+};
 
-
-    var user = {
-
-      id: 42,
-
-      displayName: "jdoe",
-
-      fullName: {
-
-          firstName: "Jhon",
-
-          lastName: "Doe"
-        }
-    };
-
-    whois(user);  // Jhon Doe is jdoe
+whois(user);  // Jhon Doe is jdoe
+```
 
 ### Operador _spread_ {#operador-spread}
 
 El operador spread permite a una expresión sea expandida en lugares donde se esperan múltiples argumentos como en llamadas a funciones, múltiples elementos para literales de \_arrays \_o múltiples variables para asignación desestructurada.
 
-    const array1 = [1, 2, 3];
+```js
+const array1 = [1, 2, 3];
 
-    const array2 = [...array1, 4, 5, 6]
+const array2 = [...array1, 4, 5, 6]
 
-      console.log(array2);  // Array [ 1, 2, 3, 4, 5, 6 ]
+  console.log(array2);  // Array [ 1, 2, 3, 4, 5, 6 ]
 
-    function func(x, y, z) {
+function func(x, y, z) {
 
-      console.log(`${x}, ${y}, ${z}`);
+  console.log(`${x}, ${y}, ${z}`);
 
-    }
+}
 
-    func(...array1);  // 1, 2, 3
+func(...array1);  // 1, 2, 3
+```
 
 ### Clases {#bucles-con-in-y-of}
 
 Anteriormente en JavaScript ya se podían definir clases haciendo uso de la propiedad p_rototype \_aunque su sintaxis ahora se ha simplificado y hecho más parecida a otros lenguajes además de definir propiedades con su método \_getter \_y \_setter._
 
-```
+```js
 class Vehiculo{
 
   constructor() {
-  
+
     this._marca = 'Seat';
-    
+
     this._color = 'rojo';
-    
+
     this._kilometros = 100;
-  
+
   }
-  
+
   get color() {
-    
+
     return this._color;
   }
-  
+
   set color(c) {
-  
+
     this._color = c;
-    
+
   }
 }
 
@@ -116,14 +122,14 @@ class Vehiculo{
 class Coche extends Vehiculo{
 
   get kilometros() {
-    
+
   return this._kilometros;
-  
+
 }
   set kilometros(k) {
-    
+
   this._kilometros = k;
-  
+
   }
 }
 
