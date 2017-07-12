@@ -4,7 +4,7 @@
 
 Su sintaxis es la siguiente:
 
-```
+```js
 const crearUsuario = () =>{...}
 ```
 
@@ -14,7 +14,7 @@ En las Arrow Functions se omite la palabra function y se agrega un igual y un si
 
 **Bucles: **Bloques de código que se ejecutan mientras se cumpla una condición. Tres elementos controlan el flujo del`bucle`:
 
-```
+```js
 Inicialización: Fija los valores con los que iniciamos el bucle.
 
 _Permanencia:_ Fija el tiempo en el que se permanece en el bucle.
@@ -26,7 +26,7 @@ _Actualización:_ determina cuando se actualizan las variables decontrol al ejec
 
 **Click: **Se activa cuando se presiona el botón del mouse y ejecuta una función que recibe como parámetro, dicha función recibe el evento.
 
-```
+```js
 const button = document.getElementById("test")
 
 button.addEventListener("click",function(event{
@@ -36,13 +36,13 @@ button.addEventListener("click",function(event{
 
 **Const: **Define una constante que no va a cambiar su valor durante el tiempo.
 
-```
+```js
 const nombre  = 'Juan'
 ```
 
 **Constructor: **El método constructor es un método especial para crear e inicializar un objeto creado a partir de una clase.
 
-```
+```js
 Sintaxis: constructor([arguments]) {...}
 ```
 
@@ -50,11 +50,11 @@ Sintaxis: constructor([arguments]) {...}
 
 **Document.querySelectorAll:**Devuelve una lista de elementos ,que son iguales al grupo de selectores. El`NodeList`contendrá todos los elementos que corresponde con cualquiera de los selectores especificados.
 
-```
+```js
 let elem = document.querySelectorAll("div.ejemplo1, div.ejemplo2");
 ```
 
-```
+```js
 function getElements(el) { 
    return document.querySelectorAll(el);
 }  
@@ -63,7 +63,7 @@ getElements("div.ejemplo");
 
 **Document.getElementById: **Devuelve el elemento por su id; id que se usa para identificar de forma única el elemento, que se encuentra en el html con el atributo`id`.
 
-```
+```js
 <div id="ejemplo"></div>
 
 let element = document.getElementById('ejemplo');
@@ -71,7 +71,7 @@ let element = document.getElementById('ejemplo');
 
 **Document.getElementsByClassName: **Devuelve una colección que contiene todos los elementos que contenga la clase del atributo, por ejemplo.
 
-```
+```js
 <div class="ejemplo"></div>
 <div class="ejemplo"></div>
 <div class="ejemplo"></div>
@@ -86,7 +86,7 @@ var ejemplo= document.getElementsByClassName("ejemplo")
 
 **Element.setAttribute: **Agrega el valor de un atributo en el elemento especificado. Si el atributo ya existe, el valor se actualiza, en el caso contrario se agrega el atributo con el nombre y el valor especificado.Elemento
 
-```
+```js
 element.setAttribute (nombre, value);
 
 name // especifica el nombre del atributo que se va a establecer. string
@@ -99,7 +99,7 @@ value // contiene el valor a asignar al atributo. string
 
 **ForIn: **Podemos iterar sobre las propiedades de un`objeto`.
 
-```
+```js
 let apple  = {
   name: 'apple',
   category: 'fruit',
@@ -117,7 +117,7 @@ let apple  = {
 
 **Generadores: **Es un objeto que sirve para decirle a`JavaScript`que nuestra función en un generador y se debe indicar con un asterisco de la siguiente forma:
 
-```
+```js
 function* generador() { 
    yield 1;
    yield 2;
@@ -137,7 +137,7 @@ El operador`===`nos ayuda a comparar objetos, ejecutando la comparación no dire
 
 Para los iterados podemos obtener lo siguiente:
 
-```
+```js
 next()—itera los datos, es una function
 
 value()—devolver el valor del dato
@@ -147,7 +147,7 @@ done()—sera un indicador para cuando la lista se haya terminado y recibe true 
 
 Con los iteradores es muy fácil sencillo realizar un for y obtener los datos..
 
-```
+```js
 for (let value of fibo){
   console.log(value)
 }
@@ -165,7 +165,7 @@ for (let value of fibo){
 
 **Math.floor: **Devuelve el máximo entero menor o igual a un número. Como`floor`es un método estático, siempre debe usarse como`Math.floor(),`en lugar de usarlo como método de un objeto.
 
-```
+```js
 Math.floor(5.7);  // Devuelve 5
 Math.floor(5.4);  // Devuelve 5
 Math.floor(5.1);  // Devuelve 5
@@ -173,7 +173,7 @@ Math.floor(5.1);  // Devuelve 5
 
 **Math.ceil: **La función devuelve el entero mayor o igual a un número dado. Como`ceil`es un método estático, siempre debe usarse como`Math.ceil()`, en lugar de usarlo como método de un objeto.
 
-```
+```js
 Math.ceil(.60);       // 1
 Math.ceil(-4.5);     // -4
 Math.ceil(5.3);     // 5
@@ -181,7 +181,7 @@ Math.ceil(5.3);     // 5
 
 **Math.round: **La función retorna el valor de un número redondeado al entero más cercano. Si la porción fraccionaría del número es 0.5 o mayor, sera redondeado al siguiente número entero superior. Si la porción de la fracción del número es menor a 0.5, sera redondeado al siguiente entero inferior. Como round es un método estático, siempre debe usarse como`Math.round(),`en lugar de usarlo como método de un objeto.
 
-```
+```js
 Math.round(20.5);   // es igual a 21
 Math.round(12.2.);   // es igual a 12
 Math.round(-10.7);   // es igual a -11
@@ -189,7 +189,7 @@ Math.round(-10.7);   // es igual a -11
 
 **Math.random: **Retorna un punto flotante, un número aleatorio dentro del rango`[0, 1].`toma desde el numero 0 \(Incluido\) hasta el 1 pero sin incluirlo, y se puede escalar hasta el rango deseado.
 
-```
+```js
 function random(){
     return Math.random()
 }
@@ -213,7 +213,7 @@ function random(){
 
 Algunos métodos:
 
-```
+```js
 "Ejemplo"[2] --- devuelve el tercer carácter "e"
 "Ejemplo".lentgh --- devuelve el tamaño del string "7"
 "Ejemplo".charCodeAt() --- devuelve el carácter en formato UNICODE
@@ -232,7 +232,7 @@ JavaScript distingue entre mayúscula y minúsculas, así que\_var Numero; \_es 
 
 **While: **El bloque de código se ejercitas mientras se cumpla la condición.
 
-```
+```js
 let i = 1;
    while(i < 10){
    i++
