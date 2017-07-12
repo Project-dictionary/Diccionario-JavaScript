@@ -16,7 +16,7 @@ Es una función que encapsula `variables` y definiciones`locales`, únicamente a
 
 **Generadores: **Es un objeto que sirve para decirle a`JavaScript`que nuestra función en un generador y se debe indicar con un asterisco de la siguiente forma:
 
-```
+```js
 function* generador() { 
    yield 1;
    yield 2;
