@@ -10,6 +10,16 @@ const crearUsuario = () =>{...}
 
 En las Arrow Functions se omite la palabra function y se agrega un igual y un signo de menor después de los argumentos \(en forma de flecha\).
 
+**Async/Await: **Async/Await es una nueva forma de manejar promesas en Javascript. Disponemos de dós métodos para trabajar con este tipo de funciones, async y await. Su uso es bastante sencillo, utilizaremos async para declarar las funciones asíncronas, y dentro de estas funciones utilizaremos await para suspender la ejecución hasta que la expresión que le sigue devuelva un valor. Veamos un ejemplo sencillo.
+
+	async function asyncFunction () {
+	  const foo = await asyncOperation()
+	  return foo
+	}
+
+Al ejecutar el código anterior, la función asyncFunction() bloqueará la ejecución del resto de código del programa hasta disponer del valor devuelto por su función interna asyncOperation().
+
+
 **Bind: **La función`bind()`crea una nueva función \(función ligada\) con el mismo cuerpo \(propiedad interna`call`en términos de`ECMAScript 5`\) como la función que será llamada con la referencia`this`asociada al primer argumento de`bind()`, el cual no podrá ser sobrescrito.`bind()`también acepta parámetros predeterminados que antecederán al resto de los parámetros específicos cuando la función objetivo sea llamada. Una función ligada también puede ser construida utilizando el operador the`new`al hacerlo, actuará como si en su lugar hubiera sido construida la función objeto.
 
 **Bucles: **Bloques de código que se ejecutan mientras se cumpla una condición. Tres elementos controlan el flujo del`bucle`:
