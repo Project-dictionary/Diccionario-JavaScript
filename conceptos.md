@@ -12,13 +12,14 @@ En las Arrow Functions se omite la palabra function y se agrega un igual y un si
 
 **Async/Await: **Async/Await es una nueva forma de manejar promesas en Javascript. Disponemos de dós métodos para trabajar con este tipo de funciones, async y await. Su uso es bastante sencillo, utilizaremos async para declarar las funciones asíncronas, y dentro de estas funciones utilizaremos await para suspender la ejecución hasta que la expresión que le sigue devuelva un valor. Veamos un ejemplo sencillo.
 
-	async function asyncFunction () {
-	  const foo = await asyncOperation()
-	  return foo
-	}
+```js
+async function asyncFunction () {
+  const foo = await asyncOperation()
+  return foo
+}
+```
 
-Al ejecutar el código anterior, la función asyncFunction() bloqueará la ejecución del resto de código del programa hasta disponer del valor devuelto por su función interna asyncOperation().
-
+Al ejecutar el código anterior, la función asyncFunction\(\) bloqueará la ejecución del resto de código del programa hasta disponer del valor devuelto por su función interna asyncOperation\(\).
 
 **Bind: **La función`bind()`crea una nueva función \(función ligada\) con el mismo cuerpo \(propiedad interna`call`en términos de`ECMAScript 5`\) como la función que será llamada con la referencia`this`asociada al primer argumento de`bind()`, el cual no podrá ser sobrescrito.`bind()`también acepta parámetros predeterminados que antecederán al resto de los parámetros específicos cuando la función objetivo sea llamada. Una función ligada también puede ser construida utilizando el operador the`new`al hacerlo, actuará como si en su lugar hubiera sido construida la función objeto.
 
@@ -251,12 +252,6 @@ let i = 1;
 
 // devuelve de 1 a 10
 ```
-
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-
-# Cuando asignamos un objeto a otro estamos haciendo que ambos apunten  al misma referencia, por eso al modificar un objeto el otro también se vera afectado, por que ambos tienen lamisca referencia de memoria
-
-> > > > > > > 4fc4b0f703b9253e47ad0ed546a864224caaafd2
 
 
 
