@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Diccionario](README.md)
 * [JavaScript](javascript.md)
 * [Definiciones](conceptos.md)
 * [    Funciones](chapter1.md)
