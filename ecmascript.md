@@ -16,7 +16,6 @@ La interpolación de variables en cadena facilita la construcción de strings y 
 
 ```js
 const now = newDate(Date.now());
-
 const message = `¡Hola ${now.getFullYear()}!`;
 
 console.log(message);  // ¡Hola 2016!
@@ -30,38 +29,27 @@ Se ha incorporado la asignación desestructurada pudiendo hacer cosas como las s
 // Arrays
 
 const array = [1, 2];
-
 const [a, b] = array;
-
-console.log(`${a}, ${b}`); // 1, 2
+  console.log(`${a}, ${b}`); // 1, 2
 
 // Objects
 
 constobject = { name: 'Jhon', age: 30};
-
 const {name, age} = object;
-
   console.log(`${name}, ${age}`);  // Jhon, 30 
 
 // Functions
 
 function whois({displayName: displayName, fullName: { firstName: name }}){
-
   console.log(`${displayName} is ${name}`);
-
 }
 
 
 var user = {
-
   id: 42,
-
   displayName: "jdoe",
-
   fullName: {
-
       firstName: "Jhon",
-
       lastName: "Doe"
     }
 };
@@ -75,15 +63,11 @@ El operador spread permite a una expresión sea expandida en lugares donde se es
 
 ```js
 const array1 = [1, 2, 3];
-
 const array2 = [...array1, 4, 5, 6]
-
   console.log(array2);  // Array [ 1, 2, 3, 4, 5, 6 ]
 
 function func(x, y, z) {
-
   console.log(`${x}, ${y}, ${z}`);
-
 }
 
 func(...array1);  // 1, 2, 3
@@ -95,47 +79,32 @@ Anteriormente en JavaScript ya se podían definir clases haciendo uso de la prop
 
 ```js
 class Vehiculo{
-
   constructor() {
-
     this._marca = 'Seat';
-
     this._color = 'rojo';
-
     this._kilometros = 100;
-
   }
 
   get color() {
-
     return this._color;
   }
-
   set color(c) {
-
     this._color = c;
-
   }
 }
 
 
 class Coche extends Vehiculo{
-
   get kilometros() {
-
-  return this._kilometros;
-
+    return this._kilometros;
 }
   set kilometros(k) {
-
   this._kilometros = k;
-
   }
 }
 
 
 const coche = newCoche();
-
 console.log(coche.color); // rojo
 ```
 
