@@ -128,7 +128,7 @@ let apple  = {
 
 **Funciones Asíncronas: **Son funciones que al ejecutarse, devuelven una promesa. Cuando una función asíncrona devuelve un valor, la promesa será resuelta con el valor devuelto. Cuando una función asíncrona lanza una Excepción o un valor, la promesa será rechazada con el valor lanzado.
 
-**Generadores: **Es un objeto que sirve para decirle a`JavaScript`que nuestra función en un generador y se debe indicar con un asterisco de la siguiente forma:
+**Generadores: **Es un objeto que sirve para decirle a`JavaScript`que nuestra función es un generador y se debe indicar con un asterisco de la siguiente forma:
 
 ```js
 function* generador() { 
@@ -139,6 +139,8 @@ function* generador() {
 
 var g = generador(); // "Generador { }"
 ```
+
+Si creamos un generador debemos colocar la palabra clave`yield`la cual indica que cuando llamemos a la función después de la primera vez, esta iniciara en la linea después de`yield`. El generador convierte en objeto la función.
 
 **Hoisting o “elevamiento”: **Javascript primero busca las declaraciones de funcion ( estas van primero que las declaraciones de variables ya que tienen prioridad),el hoisting en funciones es de 2 maneras las funciones como declaracion son llevadas al tope del actual scope, por otro lado las funciones como expresion se eleva su variable al tope de ese scope de tal manera que esta no funciona por medio del hoisting, las pone en el tope del scope, como undefined, solo hasta llega al lugar donde fueron anteriormente declaradas ( la expresion ) sera inicializado su valor real de esta ultima forma ocurre con las variables.
   ```js
@@ -165,11 +167,12 @@ var g = generador(); // "Generador { }"
     var foo = undefined;
     
     foo = function(){...};
+```
 
 **Immediately Invoked Function Expressions (IIFEs): **Existe un tipo de funcion llamado IIFEs, usadas comunente patrones de diseño de software como module pattern , factory pattern etc... IIFEs tiene diferentes implementaciones 
 
 ```js
-					// Classic
+				// Classic
 				(function(){})();
 				 
 				// Crockford's favorite
@@ -184,8 +187,6 @@ var g = generador(); // "Generador { }"
 				// Crazy version
 				!1%-+~function(){}();
 ```
-
-Si creamos un generador debemos colocar la palabra clave`yield`la cual indica que cuando llamemos a la función después de la primera vez, esta iniciara en la linea después de`yield`. El generador convierte en objeto la función.
 
 _**Inmutabilidad**_: Tiene por objetivo hacer que los parámetros de un objeto sean no modificados o inmutables.
 
