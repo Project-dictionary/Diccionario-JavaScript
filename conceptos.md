@@ -254,4 +254,52 @@ let i = 1;
 ```
 
 
+**El Hoisting o “elevamiento”: **Javascript primero busca las declaraciones de funcion ( estas van primero que las declaraciones de variables ya que tienen prioridad),el hoisting en funciones es de 2 maneras las funciones como declaracion son llevadas al tope del actual scope, por otro lado las funciones como expresion se eleva su variable al tope de ese scope de tal manera que esta no funciona por medio del hoisting, las pone en el tope del scope, como undefined, solo hasta llega al lugar donde fueron anteriormente declaradas ( la expresion ) sera inicializado su valor real de esta ultima forma ocurre con las variables.
+  ```js
+  // Ejemplo1
+		var foo = "12"
 
+		function foo(){
+
+  			console.log("foo function"); 
+		}
+
+		console.log(foo) -> 12 ( foo is not a function ) 
+    
+    // Ejemplo2
+    console.log(foo) -> undefined
+
+		var foo = function(){
+
+  			console.log("foo function"); 
+		}
+   
+    //ocurre que 
+  
+    var foo = undefined;
+    
+    foo = function(){...};
+  ```
+
+
+**Callback: **Es la manera mas comun de controlar la asincronía en JavaScript, Es una funcion que se establece para realizar una llamada de vuelta en un momento del tiempo indeterminado, usada como parametro de funcion en algun evento o funcion que presente asincronía.
+
+
+**Immediately Invoked Function Expressions (IIFEs): **Existe un tipo de funcion llamado IIFEs, usadas comunente patrones de diseño de software como module pattern , factory pattern etc... IIFEs tiene diferentes implementaciones 
+
+```js
+					// Classic
+				(function(){})();
+				 
+				// Crockford's favorite
+				(function(){}());
+				 
+				// Unary versions
+				+function(){}();
+				 
+				// Facebook version
+				!function(){}();
+				 
+				// Crazy version
+				!1%-+~function(){}();
+```
