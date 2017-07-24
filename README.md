@@ -41,7 +41,7 @@ Estamos disponibles en todo momento para recibir dudas o correcciones que pueda 
 
 * [Fredy bustos](https://twitter.com/bustosfredy)
 * [Carlos Millan](https://twitter.com/reactdevelop)
-* [Roberto SLopez](https://twitter.com/Roberto_SLopez)
+* [Roberto S. Lopez](https://twitter.com/Roberto_SLopez)
 
 
 
