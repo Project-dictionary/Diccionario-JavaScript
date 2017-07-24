@@ -22,5 +22,5 @@ _**JavaScript**_\(Jun 13, 2017\)
 
 --Carlos  Azaustre
 
--- Ebook: [Aprendiendo JavaScript](https://leanpub.com/aprendiendo-javascript)
+--Ebook: [Aprendiendo JavaScript](https://leanpub.com/aprendiendo-javascript)
 
