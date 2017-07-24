@@ -27,9 +27,9 @@ El diccionario no sustituye la documentación oficial y solo quiere ser un mater
 
 ### Comparte
 
-Si te gusta el contenido y crees que puedes compartir tus conocimientos con la comunidad, corregir o añadir contenido, no dudes en hacer un _fork_, un _pull request _en [**Github**](https://github.com/Project-dictionary/Diccionario-JavaScript) vas a encontrar el repositorio sincronizado con este book. Si crees que el contenido le es util a personas que sabes que trabajan o aprenden JavaScript, comparte este diccionario.
+Si te gusta el contenido y crees que puedes compartir tus conocimientos con la comunidad, corregir o añadir contenido, no dudes en hacer un _fork_, un \_pull request \_en [**Github**](https://github.com/Project-dictionary/Diccionario-JavaScript) vas a encontrar el repositorio sincronizado con este book. Si crees que el contenido le es util a personas que sabes que trabajan o aprenden JavaScript, comparte este diccionario.
 
-Para colaborar es necesario tener presente que se trata de un_** DICCIONARIO **_y por lo tanto hay que agregar:
+Para colaborar es necesario tener presente que se trata de un\_** DICCIONARIO **\_y por lo tanto hay que agregar:
 
 * Definiciones cortas y concisas. 
 * Si quires agregar un tema que necesita una explicación mas extensa, puedes agregar un post en el cual puedes explicar mucho mejor.
@@ -41,7 +41,7 @@ Estamos disponibles en todo momento para recibir dudas o correcciones que pueda 
 
 * [Fredy bustos](https://twitter.com/bustosfredy)
 * [Carlos Millan](https://twitter.com/reactdevelop)
-* [Roberto Lopez](https://twitter.com/Roberto_SLopez)
+* [Roberto SLopez](https://twitter.com/Roberto_SLopez)
 
 
 
