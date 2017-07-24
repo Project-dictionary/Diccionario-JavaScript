@@ -1,4 +1,4 @@
-# Bibliografía {#bibliografía}
+# **Bibliografía** {#bibliografía}
 
 _**ECMAScript 6.**_
 
@@ -17,4 +17,10 @@ _**JavaScript**_\(Jun 13, 2017\)
 --mouseEvent
 
 --web: [www.w3.org](https://www.w3.org/TR/DOM-Level-3-Events/#event-type-click)
+
+**Aprendiendo JavaScript**
+
+--Carlos  Azaustre
+
+-- Ebook: [Aprendiendo JavaScript](https://leanpub.com/aprendiendo-javascript)
 
