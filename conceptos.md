@@ -37,6 +37,25 @@ _Actualización:_ determina cuando se actualizan las variables decontrol al ejec
 
 **Closures: **Los closures o funciones de cierre, son un patrón de diseño muy utilizado en`JavaScript.`Es una función que encapsula`variables`y definiciones`locales`, únicamente accesibles si son devueltas con el operador`return`, este patrón hace posible modularizar nuestro código.
 
+```js
+function foo(lenguaje) {
+  const nombretrans = 'Babel'
+  return function(){
+    console.log(lenguaje+' es un lenguaje de programacion y '+nombretrans+' un transpilador poderoso')
+  }
+}
+
+let bar = foo('Javascript')//foo devuelve una funcion que es almacenada en bar 
+bar() //Debido a que cuando foo fue llamada su parametro 
+      //era 'Javascript' entonces recuerda ese mismo valor
+let baz = foo('JS')
+baz()//Aca recuerda JS, Babel siempre se mantiene ya que es una constante en la funcion
+
+//Lo importante es que una function interna recuerda 
+//las variables de una funcion externa aun cuando la externa
+//no se esta ejecutando
+```
+
 **Click: **Se activa cuando se presiona el botón del mouse y ejecuta una función que recibe como parámetro, dicha función recibe el evento.
 
 ```js
